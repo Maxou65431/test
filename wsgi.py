@@ -1,7 +1,4 @@
-from flask import Flask  # ✅ Flask doit être importé correctement
-from flask import app  # ❌ Mauvais import
+from app import app  # Si ton fichier s'appelle maintenant app.py
 
-# ✅ Solution correcte
-from flask import app
-
-gunicorn_app = app  # ✅ Gunicorn peut appeler gunicorn_app
+if __name__ != "__main__":
+    gunicorn_app = app
