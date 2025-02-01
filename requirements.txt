@@ -1,0 +1,4 @@
+Flask
+requests
+zipfile36
+gunicorn
